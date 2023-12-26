@@ -1,0 +1,44 @@
+<form [formGroup]="myForm" (ngSubmit)="updateMovie()">
+  <div class="p-4 flex items-center w-full justify-center bg-white">
+    <div class="w-80">
+      <label for="email" class="block text-sm font-medium text-gray-700"
+        >Title</label
+      >
+      <div class="mt-1">
+        <input
+          type="text"
+          name="title"
+          formControlName="title"
+          id="title"
+          class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+          placeholder="Enter movie title"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="p-4 flex items-center w-full justify-center bg-white">
+    <div class="w-80">
+      <label for="email" class="block text-sm font-medium text-gray-700"
+        >Description</label
+      >
+      <div class="mt-1">
+        <input
+          type="text"
+          formControlName="description"
+          name="description"
+          id="description"
+          class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+          placeholder="Enter movie description"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="p-4 flex items-center w-full justify-center bg-white">
+    <button
+      type="submit"
+      class="inline-flex w-80 justify-center items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+    >
+      Update movie
+    </button>
+  </div>
+</form>
